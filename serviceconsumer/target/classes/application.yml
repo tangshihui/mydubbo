@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: dubbo-consumer
+  dubbo:
+    scan: com.tsh.serviceconsumer
+    application:
+      id: dubbo-consumer
+      name: dubbo-consumer
+    protocol:
+      id: dubbo
+      name: dubbo
+      port: 23456
+    registry:
+      id: my-reg
+      address: zookeeper://192.168.1.118:2181
